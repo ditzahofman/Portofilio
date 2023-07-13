@@ -1,0 +1,308 @@
+html,
+body {
+  height: 100vh;
+
+}
+
+header {
+  height: 10%;
+  background-color: rgb(66, 62, 63);
+  text-align: right;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding:2%;
+  z-index: 9999;
+
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.a {
+  position: relative;
+  top: 50%;
+  color: white !important;
+  font-size: medium;
+  font-weight: 900;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-right: 4%;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+
+  /* Styles for screens smaller than 768px (e.g., mobile devices) */
+  .a {
+    display: none;
+  }
+
+  .D {
+    font-size: medium !important;
+  }
+}
+
+#about {
+  padding: 5%;
+
+}
+
+.connect {
+  margin-left: 38%;
+}
+
+#home {
+  margin-top: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(12, 12, 11);
+
+}
+
+#projects {
+  width: 99%;
+  background-color: rgb(12, 12, 11);
+  border: 2px solid salmon;
+  padding: 5%;
+  margin: 1%;
+
+}
+
+.cards {
+  display: flex;
+}
+
+@media (max-width: 480px) {
+  .cards {
+    display: block;
+  }
+
+  .card {
+    width: 100% !important;
+  }
+}
+
+.card {
+  width: 100%;
+  height: 70%;
+  margin: 1%;
+
+}
+
+.link {
+  color: salmon !important;
+  margin-left: 10%;
+}
+
+.D {
+  position: absolute;
+  top: 1%;
+  left: 3% !important;
+  font-size: 36px;
+  font-weight: bold;
+  color: salmon !important;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgb(236, 228, 228);
+}
+
+h3 {
+  color: white !important;
+  font-weight: bold !important;
+  font-size: 2.5rem !important;
+}
+
+h5 {
+  color: black !important;
+  font-size: 1.5rem !important;
+  font-weight: bold !important;
+}
+
+#aboutMe {
+  position: relative;
+  height: 80%;
+  display: inline-block;
+  border: solid 2px salmon;
+  text-align: center;
+  padding: 5%;
+  width: 80%;
+  left: 10%;
+  top: 15%;
+}
+
+h1 {
+  color: white !important;
+  font-weight: bold !important;
+  font-size: 6rem !important;
+
+}
+
+h2 {
+  color: white !important;
+  font-weight: bold !important;
+  font-size: 3.5rem !important;
+  margin: 0%;
+}
+
+#description {
+  color: aliceblue;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+
+  /* Styles for screens smaller than 768px (e.g., mobile devices) */
+  h1 {
+    font-size: 2.2rem !important;
+  }
+
+  h2 {
+    font-size: 1.8rem !important;
+  }
+
+  #description {
+    font-size: 0.81rem !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  /* Styles for screens between 768px and 1023px */
+  h1 {
+    font-size: 4rem !important;
+  }
+
+  h2 {
+    font-size: 3rem !important;
+  }
+
+  #description {
+    font-size: 1.1rem !important;
+  }
+}
+
+/* Add additional media queries for larger screen sizes if needed */
+
+
+
+
+
+
+
+.progress-bar {
+
+  animation: progress-animation 2s ease-in-out forwards;
+}
+
+@keyframes progress-animation {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 100%;
+  }
+
+  100% {
+    /* width: 0; */
+  }
+}
+
+.icon-link {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.icon-link i {
+  transition: color 0.3s ease;
+}
+
+.icon-link:hover i {
+  color: #0077B5;
+  /* LinkedIn color */
+}
+
+.icon-link:last-child {
+  margin-right: 0;
+}
+
+#contact {
+  text-align: center;
+}
+
+form {
+  padding: 2%;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid gray;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: salmon;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: salmon;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+}
+
+h4 {
+  font-weight: bold !important;
+}
+
+#aboutMe h1,
+h2,
+#description {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 4s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
